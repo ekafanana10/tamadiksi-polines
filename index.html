@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamadiksi Polines</title>
-    <!-- CSS Bootstrap 5 -->
+    <title>Kamadiksi Polines | Portal Resmi</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #0d6efd, #0a58ca); color: white; padding: 80px 0; border-radius: 0 0 50px 50px; }
+        .card { border: none; border-radius: 15px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .btn-custom { border-radius: 50px; padding: 12px 30px; font-weight: 600; }
+        .shadow-custom { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">Kamadiksi Polines</a>
+            <a class="navbar-brand fw-bold text-primary" href="#">KAMADIKSI POLINES</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="#pengurus">Pengurus</a>
-                <a class="nav-link fw-bold text-warning" href="#absensi">Absensi Rapat</a>
+                <a class="nav-link btn btn-primary text-white px-4" href="#absensi">Absensi</a>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="bg-light py-5 text-center">
+    <header class="hero text-center shadow-custom">
         <div class="container">
-            <h1 class="display-5">Portal Administrasi Kamadiksi</h1>
-            <p class="lead">Selamat Datang di Portal Resmi Kamadiksi Polines</p>
+            <h1 class="display-4 fw-bold">Portal Administrasi</h1>
+            <p class="lead mt-3">Digitalisasi dan Integrasi Data Kamadiksi Politeknik Negeri Semarang</p>
         </div>
     </header>
 
     <!-- Section Pengurus -->
     <section id="pengurus" class="container my-5">
-        <h2 class="mb-4 text-center">Daftar Pengurus</h2>
+        <h2 class="text-center fw-bold mb-5">Daftar Pengurus</h2>
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-4">
+            <!-- Card -->
+            <div class="col-md-3">
+                <div class="card shadow-custom p-3 text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Nama Pengurus</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Jabatan</h6>
-                        <p class="card-text">Bidang: -</p>
+                        <div class="bg-primary text-white rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; line-height: 80px; font-size: 30px;">👤</div>
+                        <h5 class="fw-bold">Nama Pengurus</h5>
+                        <p class="text-muted small">Jabatan</p>
                     </div>
                 </div>
             </div>
@@ -45,21 +56,20 @@
     </section>
 
     <!-- Section Absensi -->
-    <section id="absensi" class="container my-5 p-4 border rounded shadow-sm bg-white">
-        <h2 class="text-center mb-3">Absensi Online Rapat</h2>
-        <div class="alert alert-info text-center">
-            Silakan pilih rapat yang sedang berlangsung di bawah ini:
-        </div>
-        <div class="d-grid gap-2 col-md-6 mx-auto">
-            <!-- GANTI LINK DI BAWAH JIKA SUDAH ADA -->
-            <a href="#" class="btn btn-outline-primary btn-lg disabled">Rapat Umum (Belum Tersedia)</a>
-            <a href="#" class="btn btn-outline-primary btn-lg disabled">Rapat Bidang (Belum Tersedia)</a>
+    <section id="absensi" class="container my-5">
+        <div class="card shadow-custom p-5 bg-white border-0">
+            <h2 class="text-center fw-bold mb-4">Absensi Rapat</h2>
+            <p class="text-center text-muted mb-4">Pilih jenis rapat untuk melakukan presensi:</p>
+            <div class="d-grid gap-3 col-md-6 mx-auto">
+                <a href="#" class="btn btn-primary btn-custom shadow">Rapat Umum</a>
+                <a href="#" class="btn btn-outline-primary btn-custom">Rapat Bidang</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy; 2026 Kamadiksi Polines</p>
+    <footer class="text-center py-4 text-secondary">
+        <p>&copy; 2026 Kamadiksi Polines - Tim IT</p>
     </footer>
 
 </body>
