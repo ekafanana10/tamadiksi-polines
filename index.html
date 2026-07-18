@@ -1,22 +1,66 @@
-<!-- Navbar dengan Menu Baru -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="#">Kamadiksi Polines</a>
-        <div class="navbar-nav">
-            <a class="nav-link" href="#pengurus">Pengurus</a>
-            <a class="nav-link btn btn-warning text-dark px-3" href="#absensi">Absensi Rapat</a>
-        </div>
-    </div>
-</nav>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamadiksi Polines</title>
+    <!-- CSS Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-<!-- Section Absensi -->
-<section id="absensi" class="container my-5 p-4 border rounded shadow-sm bg-light">
-    <h2 class="text-center">Absensi Rapat</h2>
-    <p class="text-center">Silakan klik tombol di bawah ini untuk mengisi absensi rapat hari ini.</p>
-    <div class="text-center">
-        <!-- GANTI URL DI BAWAH DENGAN LINK GOOGLE FORM ANDA -->
-        <a href="https://docs.google.com/forms/..." target="_blank" class="btn btn-primary btn-lg">
-            Isi Absensi Sekarang
-        </a>
-    </div>
-</section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kamadiksi Polines</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#pengurus">Pengurus</a>
+                <a class="nav-link fw-bold text-warning" href="#absensi">Absensi Rapat</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-5">Portal Administrasi Kamadiksi</h1>
+            <p class="lead">Selamat Datang di Portal Resmi Kamadiksi Polines</p>
+        </div>
+    </header>
+
+    <!-- Section Pengurus -->
+    <section id="pengurus" class="container my-5">
+        <h2 class="mb-4 text-center">Daftar Pengurus</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Nama Pengurus</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Jabatan</h6>
+                        <p class="card-text">Bidang: -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Absensi -->
+    <section id="absensi" class="container my-5 p-4 border rounded shadow-sm bg-white">
+        <h2 class="text-center mb-3">Absensi Online Rapat</h2>
+        <div class="alert alert-info text-center">
+            Silakan pilih rapat yang sedang berlangsung di bawah ini:
+        </div>
+        <div class="d-grid gap-2 col-md-6 mx-auto">
+            <!-- GANTI LINK DI BAWAH JIKA SUDAH ADA -->
+            <a href="#" class="btn btn-outline-primary btn-lg disabled">Rapat Umum (Belum Tersedia)</a>
+            <a href="#" class="btn btn-outline-primary btn-lg disabled">Rapat Bidang (Belum Tersedia)</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2026 Kamadiksi Polines</p>
+    </footer>
+
+</body>
+</html>
